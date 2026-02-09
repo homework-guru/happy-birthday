@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love 💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Particle Canvas for Confetti/Hearts -->
+    <canvas id="particles"></canvas>
+
+    <!-- Music Control -->
+    <button id="musicBtn" class="music-control" aria-label="Toggle Music">
+        <span class="music-icon">🎵</span>
+        <span class="music-text">Play Music</span>
+    </button>
+
+    <!-- Audio Element - Happy Birthday Music (Local File) -->
+    <audio id="bgMusic" loop>
+        <source src="music/Happy Birthday.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="balloon balloon-1">🎈</div>
+            <div class="balloon balloon-2">🎈</div>
+            <div class="balloon balloon-3">🎈</div>
+            <div class="floating-hearts">
+                <span class="heart">💖</span>
+                <span class="heart">💕</span>
+                <span class="heart">💗</span>
+                <span class="heart">💝</span>
+                <span class="heart">💖</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="sparkle">✨</span>
+                Happy Birthday
+                <span class="sparkle">✨</span>
+            </h1>
+            <p class="hero-subtitle">To The Most Beautiful Soul In My World</p>
+            <div class="hero-name">My Dearest Love 💕</div>
+            <div class="cake-emoji">🎂</div>
+            <p class="hero-date">February 10th, 2026</p>
+            <p class="hero-date">You're not just my girlfriend, you're my best friend, my confidant, and the most
+                amazing person I've ever known.
+                <br>Happy Birthday to the one who makes every day brighter!
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="memories" id="memories">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-decoration">📸</span>
+                Our Beautiful Memories
+                <span class="title-decoration">📸</span>
+            </h2>
+            <p class="section-subtitle">Every moment with you is a treasure I hold close to my heart</p>
+
+            <div class="gallery">
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/IMG_20190124_222348.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Where it all began 🌹</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/20210201_204643.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Our memories together 💕</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/20210201_223321.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Your beautiful smile ✨</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/20210208_155728.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">All the kisses 🌟</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/20210214_124508.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Our First snow together 💘</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/20210214_141543.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">My favorite person 💖</p>
+                    </div>
+                </div>
+
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/IMG_20190124_222401.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">The day I fell in love 💫</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/IMG_20200921_135727.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Fall in love again 🍂</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/IMG_2201.JPG" alt="Memory" loading="lazy"></div>
+                        <p class="polaroid-caption">Our biggest adventure together🌞</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/IMG_2817.PNG" alt="Memory" loading="lazy"></div>
+                        <p class="polaroid-caption">Love of my life 💘</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/IMG_3617.JPEG" alt="Memory" loading="lazy">
+                        </div>
+                        <p class="polaroid-caption">Perfect together 💑</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/IMG_3936.JPG" alt="Memory" loading="lazy"></div>
+                        <p class="polaroid-caption">My heart is yours 💓</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20231012_034746081.MP.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Soulmates forever 💞</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20231113_042148789.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Dream come true 🌙</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20231223_021801510.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Holiday joy 🎄</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240106_115358865.MP.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">New year, same love 🎊</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240107_004352489.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Endless adventures 🗺️</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240107_004615852.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">My everything 🌹</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240107_190821370.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Best day and trip ever 🎉</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240107_192709553.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Laughing together 😄</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240107_214301429.NIGHT.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Night adventures 🌃</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240108_182058036.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Making memories 📸</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240108_182305333.MP.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Us against the world 🌍</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240108_191453840.PORTRAIT.jpg"
+                                alt="Memory" loading="lazy"></div>
+                        <p class="polaroid-caption">Your goofy ass 💋</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240108_201043745.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Forever grateful 🙏</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240108_215136590.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">New York Evening magic ✨</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240108_230621306.MP.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">My favorite view 👀</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240108_234535032.NIGHT.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Starry nights 🌟</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240108_234841784.NIGHT.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Dreamy moments in Dreamy city 💭</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240210_190847445.MP.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">February love 💝</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240317_014445098.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">My Favorite Akshya Kumar🌸</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240504_181006836.PORTRAIT.jpg"
+                                alt="Memory" loading="lazy"></div>
+                        <p class="polaroid-caption">My queen 👑</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240505_005742322.PORTRAIT.jpg"
+                                alt="Memory" loading="lazy"></div>
+                        <p class="polaroid-caption">Gorgeous you 😍</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240506_012843618.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Perfect moments 💫</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240506_184458661.PORTRAIT.jpg"
+                                alt="Memory" loading="lazy"></div>
+                        <p class="polaroid-caption">Love this face 🥰</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240506_190235641.PORTRAIT.jpg"
+                                alt="Memory" loading="lazy"></div>
+                        <p class="polaroid-caption">Baddie slaying in Hollywood 💖</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240506_204548688.PORTRAIT.jpg"
+                                alt="Memory" loading="lazy"></div>
+                        <p class="polaroid-caption">My heart melts 💗</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240506_214210678.PORTRAIT.jpg"
+                                alt="Memory" loading="lazy"></div>
+                        <p class="polaroid-caption">Blessed to have you 🙌</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240527_003721426.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Our First Top golf 🌻</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240710_055554426.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">July memories 🎆</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240710_055556841.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Sunshine days ☀️</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240714_025613917.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Best summer ever 🏖️</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20240714_164345854.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Golden hour in Wyoming ✨</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20241013_174028072.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Fall vibes 🍂</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20241125_214652154.PORTRAIT.jpg"
+                                alt="Memory" loading="lazy"></div>
+                        <p class="polaroid-caption">Fun things we do together🦃</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20250110_023705072.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">New beginnings 🎆</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20250110_202229048.PORTRAIT.jpg"
+                                alt="Memory" loading="lazy"></div>
+                        <p class="polaroid-caption">January joy 💕</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20250208_064247668.MP.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Vegas Birthday week! trip was fun. 🎂</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20250208_180647020.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Different food places we tried together 🎉</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20250208_210303293.PORTRAIT.jpg"
+                                alt="Memory" loading="lazy"></div>
+                        <p class="polaroid-caption">My favorite picture of yours🎊</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20250209_203410094.PORTRAIT.jpg"
+                                alt="Memory" loading="lazy"></div>
+                        <p class="polaroid-caption">Celebrating you 🥳</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20250209_204703123.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Goofy time! 🎈</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20250210_112548903.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Morning cuteness 🌅</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20250210_112613922.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Just us 💑</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20250211_032810410.PORTRAIT.ORIGINAL.jpg"
+                                alt="Memory" loading="lazy"></div>
+                        <p class="polaroid-caption">My love story 📖</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20250815_005315199.PORTRAIT.jpg"
+                                alt="Memory" loading="lazy"></div>
+                        <p class="polaroid-caption">You look soooo cute. 🌊</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20250815_005606223.PORTRAIT.jpg"
+                                alt="Memory" loading="lazy"></div>
+                        <p class="polaroid-caption">Summer nights 🌙</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20250816_005742266.PORTRAIT.ORIGINAL.jpg"
+                                alt="Memory" loading="lazy"></div>
+                        <p class="polaroid-caption">Perfect portrait in pottery class 📷</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20250930_010851521.MP.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">September love and your trip back to Nepal</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20251208_003552990.MP.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Winter warmth ❄️</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20251213_195816598.MP.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Stunning and gorgeous as always 🎄</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20251213_201830343.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Love all of your curls 🎁</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/PXL_20251223_002043952.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Fun memories last of year 🎅</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/Snapchat-1237418962.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Silly moments 😋</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/Snapchat-1771717533.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Goofy together 🤪</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/Snapchat-2008407537.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Fun times 🎢</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/Snapchat-240236924.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">My best friend 👯</p>
+                    </div>
+                </div>
+                <div class="polaroid" data-aos="fade-up">
+                    <div class="polaroid-inner">
+                        <div class="photo-placeholder"><img src="assets/Snapchat-477182086.jpg" alt="Memory"
+                                loading="lazy"></div>
+                        <p class="polaroid-caption">Forever & always 💕</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Wish Section -->
+    <section class="final-wish" id="wish">
+        <div class="container">
+            <div class="wish-card">
+                <div class="wish-hearts">
+                    <span class="floating-heart">💖</span>
+                    <span class="floating-heart">💕</span>
+                    <span class="floating-heart">💗</span>
+                </div>
+                <h2 class="wish-title">My Birthday Wish For You</h2>
+                <div class="wish-content">
+                    <p>On this special day, I wish you all the happiness in the world. May your year ahead be filled
+                        with laughter, love, success, and all the beautiful things you deserve.</p>
+                    <p>Thank you for being you - for your kindness, your warmth, your beautiful soul, and for choosing
+                        to share your life with me.</p>
+                    <p>Looking at all these memories, I'm reminded of how lucky I am to have you. Every photo tells a
+                        story of our love, and I can't wait to make millions more with you.</p>
+                    <p class="signature">Forever & Always Yours,</p>
+                    <p class="signature-name">With All My Love Roshan💕</p>
+                </div>
+                <div class="wish-decoration">
+                    <span>🎂</span>
+                    <span>🎁</span>
+                    <span>🎉</span>
+                    <span>🎊</span>
+                    <span>🎂</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with 💕 for the most amazing person in the world</p>
+        <p class="footer-year">© 2026 - Forever Yours</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
